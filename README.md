@@ -1,5 +1,3 @@
-<!-- Operational template: ai-toolkit/prompts/project-docs.md — keep in sync -->
-
 # Cross-Project Conventions
 
 Standards and patterns shared across [kphutt](https://github.com/kphutt) repositories.
@@ -82,7 +80,6 @@ No conventional-commits prefix (`feat:`, `fix:`) — just clear English.
 3. Add `CLAUDE.md` — architecture, build commands, conventions
 4. Add `ROADMAP.md` — initial priorities
 5. Create `docs/decisions/` and `docs/design/` directories
-6. Optionally use [ai-toolkit](https://github.com/kphutt/ai-toolkit)'s `/bootstrap` skill to scaffold the structure
 
 ## What We Don't Do
 
