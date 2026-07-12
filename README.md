@@ -56,11 +56,11 @@ What follows from this — good, bad, and neutral.
 
 Required for every initiative. Dump sub-tasks, open questions, half-baked ideas, trade-off analysis before building. Messy by design. When something settles, it graduates to a decision record in `docs/decisions/`.
 
-## CLAUDE.md Convention
+## AGENTS.md Convention
 
-Every repo has a `CLAUDE.md` at its root. This is the AI coding assistant's entry point — build commands, architecture overview, key patterns, testing notes, and a pointer to the docs structure.
+Every repo has an `AGENTS.md` at its root — the tool-agnostic ([agents.md](https://agents.md)) entry point that AI coding assistants read: build commands, architecture overview, key patterns, testing notes, and a pointer to the docs structure.
 
-Not a substitute for `README.md`. The README is for humans browsing GitHub. `CLAUDE.md` is for AI coding assistants that need to understand the codebase fast.
+Not a substitute for `README.md`. The README is for humans browsing GitHub. `AGENTS.md` is for AI coding assistants that need to understand the codebase fast.
 
 ## Commit Style
 
@@ -77,7 +77,7 @@ No conventional-commits prefix (`feat:`, `fix:`) — just clear English.
 
 1. Create the repo and clone it
 2. Add `README.md` — what it is, how to use it
-3. Add `CLAUDE.md` — architecture, build commands, conventions
+3. Add `AGENTS.md` — architecture, build commands, conventions
 4. Add `ROADMAP.md` — initial priorities
 5. Create `docs/decisions/` and `docs/design/` directories
 
