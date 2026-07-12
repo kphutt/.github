@@ -7,5 +7,5 @@
 
 ## Shipped
 
-- [x] **Cross-project conventions** — README documenting the docs lifecycle, decision records, and CLAUDE.md convention
+- [x] **Cross-project conventions** — README documenting the docs lifecycle, decision records, and AGENTS.md convention
 - [x] **Default community health files** — CONTRIBUTING.md, SECURITY.md
