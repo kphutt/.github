@@ -1,0 +1,19 @@
+# Dependabot keeps the pinned hook revision in .pre-commit-config.yaml current.
+#
+# cooldown: every release-age delay is 7 days. Dependabot won't propose a release until it has
+# been public for 7 days, so a compromised or yanked release is usually caught upstream first.
+# Dependabot has no security updates for pre-commit, so every hook bump waits the full cooldown.
+version: 2
+updates:
+  - package-ecosystem: "pre-commit"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: "deps"
+    labels: ["dependencies"]
+
+  # No "github-actions" ecosystem: this repo has no .github/workflows. Add it in the same
+  # change if a workflow is ever added.

@@ -7,7 +7,7 @@
 # pre-commit builds the gitleaks binary into its own environment -- no local install, no "whatever
 # version is on PATH", and `rev:` pins it so two machines can't silently run different rules.
 #
-# Where checks run, and why this repo has these: ai-toolkit/docs/where-checks-run.md
+# Where checks run is decided per repo, by whether it is public and whether a merge ships.
 
 # This repo has no test or lint suite to mirror, so the secret scan is the whole local gate --
 # which is also all the previous shared hook provided. Add hooks here if the repo gains a suite.
