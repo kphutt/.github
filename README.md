@@ -8,6 +8,9 @@ Every repository follows the same documentation structure:
 
 ```
 ROADMAP.md                              # root — prioritized big rocks
+BACKLOG.md                              # root — new repos only: Blocked / In progress / Done
+archive/
+  done-YYYY-MM.md                       # new repos only: older Done entries, one file per month
 docs/
   decisions/
     0001-short-title.md                 # one decision per file
@@ -21,7 +24,13 @@ docs/
 
 ## ROADMAP.md
 
-The PM view. Prioritized list of what's next. This *is* the backlog — no separate backlog file. Items are big rocks (features, refactors, architectural changes). Mark completed items with ~~strikethrough~~ and checkmark.
+The PM view. Prioritized list of what's next. It is the plan, not the work queue. In a new repo, open work lives in `BACKLOG.md`; in an existing repo, in the issue tracker. Items are big rocks (features, refactors, architectural changes). Mark completed items with ~~strikethrough~~ and checkmark.
+
+## BACKLOG.md (new repos)
+
+New repos keep open work in a root `BACKLOG.md` with three sections: Blocked, In progress and Done. When Done grows long, move its older entries to `archive/done-YYYY-MM.md`, one file per month. Write it as curated public content, since every repo is assumed to go public one day: no local paths, no personal data, no private tracker links, no unfixed security findings.
+
+Existing repos keep their issue tracker. They are not migrated, and they get no `BACKLOG.md`. A next step that stays open after a commit goes to the backlog (the tracker, or `BACKLOG.md` in a new repo), never into the commit message.
 
 ## Decision Records (`docs/decisions/`)
 
@@ -83,7 +92,7 @@ No conventional-commits prefix (`feat:`, `fix:`) — just clear English.
 
 ## What We Don't Do
 
-- No separate backlog file — the roadmap is the backlog
+- No second project-level backlog file: new repos use `BACKLOG.md` only, and existing repos use their tracker
 - No decisions inside initiative folders — they're project-wide, not initiative-scoped
 - No formal RFC process for solo/small team work — that's for collecting feedback from others
 - No maintaining a decision index file — `ls docs/decisions/` is the index
