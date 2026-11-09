@@ -30,7 +30,7 @@ The PM view. Prioritized list of what's next. It is the plan, not the work queue
 
 New repos keep open work in a root `BACKLOG.md` with three sections: Blocked, In progress and Done. When Done grows long, move its older entries to `archive/done-YYYY-MM.md`, one file per month. Write it for a public reader: no local paths, no personal data, no private links, no unfixed security findings.
 
-Older repos track open work in their issue tracker instead. A next step that stays open after a commit goes in the backlog, not the commit message.
+Older repos track open work in their issue tracker instead. A next step that stays open after a commit goes there (the tracker, or `BACKLOG.md` in a new repo), not in the commit message.
 
 ## Decision Records (`docs/decisions/`)
 
@@ -92,7 +92,7 @@ No conventional-commits prefix (`feat:`, `fix:`) — just clear English.
 
 ## What We Don't Do
 
-- No second project-level backlog file: new repos use `BACKLOG.md` only, and existing repos use their tracker
+- No second project-level backlog file: new repos use `BACKLOG.md` only, and existing repos use their tracker (an initiative whose phases ship separately may keep a phased plan in `docs/design/{name}/backlog.md`)
 - No decisions inside initiative folders — they're project-wide, not initiative-scoped
 - No formal RFC process for solo/small team work — that's for collecting feedback from others
 - No maintaining a decision index file — `ls docs/decisions/` is the index
