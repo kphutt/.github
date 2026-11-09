@@ -28,9 +28,9 @@ The PM view. Prioritized list of what's next. It is the plan, not the work queue
 
 ## BACKLOG.md (new repos)
 
-New repos keep open work in a root `BACKLOG.md` with three sections: Blocked, In progress and Done. When Done grows long, move its older entries to `archive/done-YYYY-MM.md`, one file per month. Write it as curated public content, since every repo is assumed to go public one day: no local paths, no personal data, no private tracker links, no unfixed security findings.
+New repos keep open work in a root `BACKLOG.md` with three sections: Blocked, In progress and Done. When Done grows long, move its older entries to `archive/done-YYYY-MM.md`, one file per month. Write it for a public reader: no local paths, no personal data, no private links, no unfixed security findings.
 
-Existing repos keep their issue tracker. They are not migrated, and they get no `BACKLOG.md`. A next step that stays open after a commit goes to the backlog (the tracker, or `BACKLOG.md` in a new repo), never into the commit message.
+Older repos track open work in their issue tracker instead. A next step that stays open after a commit goes in the backlog, not the commit message.
 
 ## Decision Records (`docs/decisions/`)
 
